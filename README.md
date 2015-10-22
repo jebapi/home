@@ -62,12 +62,12 @@ JebApi will consist of multiple libraries managed by a single framework.
 To start, the following features will be developed as their own libraries
 with their own repositories
 
-1. di -- Dependency Injection
-2. routing -- routes requests to appropriate class and method
-3. annotations -- contains annotations for specifying which class
+1. [di] (https://github.com/jebapi/di) -- Dependency Injection
+2. [routing] (https://github.com/jebapi/routing) -- routes requests to appropriate class and method
+3. [annotations] (https://github.com/jebapi/annotations) -- contains annotations for specifying which class
       should be used for a route and which http method a class method
       is mapped to. Contains a parser to grab values from annotations
-4. http -- wraps a socket connection and makes handling data coming in more
+4. [http] (https://github.com/jebapi/http) -- wraps a socket connection and makes handling data coming in more
       elegantly
 
 These will be the major components that will achieve the initial goal of
