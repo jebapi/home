@@ -11,7 +11,7 @@ similar functionalities as ASP.NET with the power of a framework running behind 
 This framework will start out small, but the goal is to take the following C# code:
 
 ```
-[Route("/api/todos")]
+[RoutePrefix("/api/todos")]
 public class TodosController : Controller
 {
   
@@ -35,7 +35,7 @@ public class TodosController : Controller
 In Java:
 
 ```
-@Route(route = "/api/todos")
+@RoutePrefix(route = "/api/todos")
 public class TodosHandler : ApiHandler {
 
   @HttpGet(route = "/{id}")
