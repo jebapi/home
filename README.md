@@ -36,16 +36,16 @@ In Java:
 
 ```
 @RoutePrefix(route = "/api/todos")
-public class TodosHandler : ApiHandler {
+public class TodosController : Controller {
 
   @HttpGet(route = "/{id}")
-  public IHttpResult Get(int id) {
+  public IHttpResult get(int id) {
     // fetch todo
     return Http.Ok(todo);
   }
   
   @HttpPut(route = "/{id}")
-  public IHttpResult Put(int id, @FromBody TodoModel model) {
+  public IHttpResult put(int id, @FromBody TodoModel model) {
     // update todo
     return Http.Ok();
   }
