@@ -3,9 +3,9 @@ Home for the JebApi Framework
 
 ## Description
 JebApi (Java wEB API) is a web api framework modeled after Microsoft's ASP.NET Framework.
-The idea is to take features from version 4 & 5 of ASP.NET and implement it in Java. So
-far, conceptualizing the framework has not come from looking at Microsoft's 
-implementation, instead it has been only through experience in working with ASP.NET. The
+The idea is to take features from version 4 & 5 of ASP.NET and implement them in Java. 
+Conceptualizing this framework has mostly come from developing with ASP.NET. Some details
+as to how something works in ASP.NET has required directly looking at Mocrosoft's code. The
 eventual goal of this is to have multiple libraries that can work together to provide
 similar functionalities as ASP.NET with the power of a framework running behind the scenes.
 This framework will start out small, but the goal is to take the following C# code:
