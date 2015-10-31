@@ -36,7 +36,7 @@ In Java:
 
 ```
 @ARoutePrefix(route = "/api/todos")
-public class TodosController : Controller {
+public class TodosController extends Controller {
 
   @AHttpGet(route = "/{id}")
   public IHttpResult get(int id) {
