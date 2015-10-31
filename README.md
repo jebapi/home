@@ -45,7 +45,7 @@ public class TodosController : Controller {
   }
   
   @AHttpPut(route = "/{id}")
-  public IHttpResult put(int id, @FromBody TodoModel model) {
+  public IHttpResult put(int id, @AFromBody TodoModel model) {
     // update todo
     return Http.Ok();
   }
