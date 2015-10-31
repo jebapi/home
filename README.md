@@ -35,16 +35,16 @@ public class TodosController : Controller
 In Java:
 
 ```
-@RoutePrefix(route = "/api/todos")
+@ARoutePrefix(route = "/api/todos")
 public class TodosController : Controller {
 
-  @HttpGet(route = "/{id}")
+  @AHttpGet(route = "/{id}")
   public IHttpResult get(int id) {
     // fetch todo
     return Http.Ok(todo);
   }
   
-  @HttpPut(route = "/{id}")
+  @AHttpPut(route = "/{id}")
   public IHttpResult put(int id, @FromBody TodoModel model) {
     // update todo
     return Http.Ok();
