@@ -12,7 +12,7 @@ distRepoId = "jebapi-snapshots"
 
 if len(sys.argv) == 1
   if sys.argv[0] == "master"
-    distRepoId = "jebapi-release"
+    distRepoId = "jebapi-releases"
 
 homedir = os.path.expanduser("~")
 
