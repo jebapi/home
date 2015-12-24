@@ -1,0 +1,8 @@
+sudo: false
+
+env:
+  global:
+    - SONATYPE_USERNAME=czifro
+    - secure: "auCivfOhtlB1p9OIMU2W8L84aK8ejqq7RZy0y2cNQrzaTJ9xb4KVhIOPOW3XVSHaRiOmNXi/1aaMtkRBvb/fHulgqw5N/p9zWV7zn8rXa5kGhMMD9szRuCvEb7yqA4ER+NkZsngOW5Prjw0I6HSlV0MHIgBChOJHQnepLCbfhTvhMUCDolNwzbxjz6MSbmzPlvhEAOABgCeKpDiOIKUAB30dkb90A/k3MSXaJNlFWISj5B2OS76N1bR72Qpiv8EQwIi5vDjy/sNn4dmU+tcFHwIy3dxH4qGx9STq6LshhbJimCwsnWMcs795aagHTJGSLJ9P0kXj1gbKo+PMUI/nOq/n+KYRmYFy/E6mxssgU/wJcZAdW+kSjtnaD7KRh7VHk4wC1PjIFnWX46OgYBABXr5s36fURZ1jraI1sCaNP7fqoJNexhf2Bt1lORKzVx981V6H9F3Ypo0w8dhrJTd9Zi6jpfu8JSsrehz+aLx4ctd3s8FENcx+IfpTzcSSsJhjxfwgm49+w6HjcPqPVggXbIOoO6jE6rd/k1ya9wdy4cMuw159nYDWXBQcUZdMUU3iMTHS4tQDaVFE9fvjnV/2iytVGCrdUz5IU6D1OOG40IUT94d9dZH1ouwI83h1c7xKNJyIXAW9JB/8p8ogzeqB2SuT+B5EzRnVjv8tVTo4hYs="
+
+script: "{ python config_maven_deploy_settings.py $TRAVIS_BRANCH; mvn clean deploy --settings ~/.m2/settings.xml; };"
