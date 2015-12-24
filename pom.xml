@@ -70,32 +70,33 @@
          <dependency>
              <groupId>org.assertj</groupId>
              <artifactId>assertj-core</artifactId>
-             <!-- use 3.2.0 for Java 8 projects -->
              <version>3.2.0</version>
              <scope>test</scope>
          </dependency>
       </dependencies>
    </dependencyManagement>
-   <pluginManagement>
-      <plugins>
-         <plugin>
-             <groupId>org.apache.maven.plugins</groupId>
-             <artifactId>maven-enforcer-plugin</artifactId>
-             <version>1.4.1</version>
-         </plugin>
-         <plugin>
-             <groupId>org.apache.maven.plugins</groupId>
-             <artifactId>maven-compiler-plugin</artifactId>
-             <configuration>
-                 <source>1.8</source>
-                 <target>1.8</target>
-             </configuration>
-         </plugin>
-         <plugin>
-             <groupId>org.apache.felix</groupId>
-             <artifactId>maven-bundle-plugin</artifactId>
-             <version>3.0.1</version>
-         </plugin>
-     </plugins>
-   </pluginManagement>
+   <build>
+      <pluginManagement>
+         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>3.0.1</version>
+            </plugin>
+        </plugins>
+      </pluginManagement>
+   </build>
 </project>
