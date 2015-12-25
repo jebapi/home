@@ -10,9 +10,9 @@ if os.environ["TRAVIS_SECURE_ENV_VARS"] == "false":
   
 distRepoId = "jebapi-snapshots"
 
-if len(sys.argv) == 1
-  if sys.argv[0] == "master"
-    distRepoId = "jebapi-release"
+if len(sys.argv) == 1:
+  if sys.argv[0] == "master":
+    distRepoId = "jebapi-releases"
 
 homedir = os.path.expanduser("~")
 
