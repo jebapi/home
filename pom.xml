@@ -2,7 +2,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.jebapi</groupId>
    <artifactId>home</artifactId>
-   <version>0.0.1-SNAPSHOT</version>
+   <version>0.0.1${env.PROJECT_VERSION}</version>
    <name>JebApi Home</name>
    <description>JebApi is a small web framework designed to have similar syntax to ASP.NET 5</description> 
    <packaging>pom</packaging>
