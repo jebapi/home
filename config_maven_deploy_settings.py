@@ -11,6 +11,8 @@ if os.environ["TRAVIS_SECURE_ENV_VARS"] == "false":
 distRepoId = ""
 
 print "Branch: " + os.environ["TRAVIS_BRANCH"] + "\n"
+print "Branch is master: " + (os.environ["TRAVIS_BRANCH"] == "master")
+print "Branch is develop: " + (os.environ["TRAVIS_BRANCH"] == "develop")
 
 if os.environ["TRAVIS_BRANCH"] == "master":
   deployDest = "jebapi-releases"
@@ -49,7 +51,7 @@ sonatypeServerNode.appendChild(sonatypeServerPass)
 serversNode.appendChild(sonatypeServerNode)
 
 m2Str = m2.toxml()
-print m2Str
+#print m2Str
 f = open(homedir + '/.m2/settings.xml', 'w')
 f.write(m2Str)
 f.close()
