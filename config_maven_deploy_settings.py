@@ -10,6 +10,8 @@ if os.environ["TRAVIS_SECURE_ENV_VARS"] == "false":
   
 distRepoId = ""
 
+print "Branch: " + os.environ["TRAVIS_BRANCH"] + "\n"
+
 if os.environ["TRAVIS_BRANCH"] == "master":
   deployDest = "jebapi-releases"
 if os.environ["TRAVIS_BRANCH"] == "develop":
