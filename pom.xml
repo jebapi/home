@@ -4,7 +4,7 @@
    <artifactId>home</artifactId>
    <version>0.0.1-SNAPSHOT</version>
    <name>JebApi Home</name>
-   <description>JebApi is a small web framework designed to have similar syntax to ASP.NET 5</description>
+   <description>JebApi is a small web framework designed to have similar syntax to ASP.NET 5</description> 
    <packaging>pom</packaging>
    <organization>
       <name>JebApi</name>
