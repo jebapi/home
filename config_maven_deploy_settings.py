@@ -8,11 +8,9 @@ if os.environ["TRAVIS_SECURE_ENV_VARS"] == "false":
   print "no secure env vars available, skipping deployment"
   sys.exit()
   
-distRepoId = ""
+deployDest = ""
 
 print "Branch: " + os.environ["TRAVIS_BRANCH"] + "\n"
-print "Branch is master: " + str(os.environ["TRAVIS_BRANCH"] == "master")
-print "Branch is develop: " + str(os.environ["TRAVIS_BRANCH"] == "develop")
 
 if os.environ["TRAVIS_BRANCH"] == "master":
   deployDest = "jebapi-releases"
@@ -36,7 +34,7 @@ sonatypeServerId = m2.createElement("id")
 sonatypeServerUser = m2.createElement("username")
 sonatypeServerPass = m2.createElement("password")
 
-idNode = m2.createTextNode(distRepoId)
+idNode = m2.createTextNode(deployDest)
 userNode = m2.createTextNode(os.environ["SONATYPE_USERNAME"])
 passNode = m2.createTextNode(os.environ["SONATYPE_PASSWORD"])
 
