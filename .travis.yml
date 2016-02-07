@@ -5,4 +5,6 @@ env:
     - SONATYPE_USERNAME=czifro
     - secure: "P5+oocvO+9+Qt63r92dZ+o8IjrmAFCaRYVwVNhcUaT+nn2dhkDljxjj3/ygbWTFS84pVRcoTUB99rPvW1UxzBgHDOp5ry7o304zQ/jKe9PUOTrryXx5ErYVCXL3x+tBKGLngZf/CTeMvuwVuQv8VYOE5Lw9czlKYXZYhMsojjH7wk8roDPpvypmScQUZYgQu95ApZlC/JQ0/7SdA/Wukiok61voEIF+mfjG1GUmdFbFjXp6Gx0tGDwTfGQgBYA+ZXqHN099hF7GvGFQ46nssNu8zRVG1VE5bqXi+pUFThNmCMz6eYzL+I2xG3aqzBItJfeWO9mS5B66ZIArj5cXzGgQPfb4kMVbVvsi6+qMHPVozHXrJo9SvAzlOiPrdhIP1eCVz4inBrO8aDDLSg4GoVgUGhGBQqJnm4nbiPPZ1SQGihRyVA5tu1YRO5sXDuV3cdjlsppeSxqFXvQu/mxLlC03rn2+DMdVHPsB1tnnOCCXRq6qPpyB1dOm8nwubZ+HZbVHOA70pB6RtuWDaqU5aYHb1NReM4duTogeEOeWylAo/X7rW31vqB5ynH9m5JTNGSkRiV79x3j5GJNF5NhXbMktK4nNZ3HWME/G19zRRkfnekIzqPYyi4YV+ZTdic4rQqOL0kFJXuZG7pBv64yHwvaYgJh/NF2uwr49irfPB2a8="
 
-script: "{ python config_maven_deploy_settings.py $TRAVIS_BRANCH; mvn clean deploy --settings ~/.m2/settings.xml; };"
+after_success:
+  - python addServer.py
+  - mvn clean deploy --settings ~/.m2/settings.xml

@@ -8,11 +8,12 @@ if os.environ["TRAVIS_SECURE_ENV_VARS"] == "false":
   print "no secure env vars available, skipping deployment"
   sys.exit()
   
-distRepoId = "jebapi-snapshots"
+distRepoId = ""
 
-if len(sys.argv) == 1:
-  if sys.argv[0] == "master":
-    distRepoId = "jebapi-releases"
+if os.environ["TRAVIS_BRANCH"] == "master":
+  deployDest = "jebapi-releases"
+if os.environ["TRAVIS_BRANCH"] == "develop":
+  deployDest = "jebapi-snapshots"
 
 homedir = os.path.expanduser("~")
 
