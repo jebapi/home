@@ -48,9 +48,8 @@ sonatypeServerNode.appendChild(sonatypeServerPass)
 
 serversNode.appendChild(sonatypeServerNode)
 
-print serversNode
-
 m2Str = m2.toxml()
+print m2Str
 f = open(homedir + '/.m2/settings.xml', 'w')
 f.write(m2Str)
 f.close()
