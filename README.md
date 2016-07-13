@@ -1,6 +1,6 @@
 # home
-Home for the JebApi Framework
+Home for the Pocillo Framework
 
 ##Wiki
-All information can be found [here](https://github.com/jebapi/home/wiki#home).
+All information can be found [here](https://github.com/pocillo/home/wiki#home).
  

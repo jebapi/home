@@ -1,0 +1,11 @@
+sudo: false
+
+env:
+  global:
+    - SONATYPE_USERNAME=czifro
+    - secure: "T/Nh6acQQ0IDjjrk/A9VrVNPy/A3EFBj0kvShLnl+I8cQdz230aznhTGDiUbUKcL6zpWhjzWfXCC+5d+mxsD5sMLusO9P4vkm5DSyxK6JrA0nutt0vgYClXAVn+kh69vqmAzgxwibtaV1Re0iJ9uWcug+w45OjAGb39q5hqtgSlyCO7o+3d0RzcXhWdhnAjTVNHP4AA3QBAXK9CmeCGZHqUvmu322j5+qc16ZeX1oP1ErmieiyaA4fD4OQZB5ZmKaFKrpC/SQSducpedH68GJ0rc96feIajpqYKHZLQVdF21pppUiOrREhQtV3TbMKJb3vrNit+JYJ0uw8Gd/wtB0nPTqqqRPTj9hc3iDpmf5DcDsQqN67P1iq5bGnr/HnMZZmfVGJTJwFkQzauxGN+qXWDX+e4BVDH46MDmHUs69sIlw9+AgTyotl2MSUYYnTmM/x3p0XsmxB8AiT90d+l/DqQuUuajajHYUvNiZzyzI5Dx64rskPlbONg7pSlNByVt7C8xYldbxsHHIj7dw/yL6JFlCLFy6OEm/xqIQU4Bi6Z3umqRRNBPxZ2JKYjuVA1jWMGj294tRl/xsi3u6q8RV/hq0JmdebL6cXRsTR0u3+nkq1ks27/HZ0L+LfaHkS8YTjQ/N2CEVDA9fun0KBMZGanZAoPsxT3j2C2GOpZIXkY="
+
+
+script:
+  - python config_maven_deploy_settings.py
+  - mvn clean deploy --settings ~/.m2/settings.xml

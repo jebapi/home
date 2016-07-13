@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
-   <groupId>com.jebapi</groupId>
+   <groupId>com.czifrotech.pocillo</groupId>
    <artifactId>home</artifactId>
-   <version>0.0.1${env.PROJECT_VERSION}</version>
-   <name>JebApi Home</name>
-   <description>JebApi is a small web framework designed to have similar syntax to ASP.NET 5</description> 
+   <version>0.0.1</version>
+   <name>Pocillo Home</name>
+   <description>Pocillo is a small web framework designed to have similar syntax to ASP.NET 5</description>
    <packaging>pom</packaging>
    <organization>
-      <name>JebApi</name>
-      <url>http://jebapi.com/</url>
+      <name>Pocillo</name>
+      <url>http://pocillo.czifrotech.com/</url>
    </organization>
    <developers>
       <developer>
@@ -20,15 +20,15 @@
    </developers>
    <distributionManagement>
       <repository>
-         <id>jebapi-releases</id>
-         <name>JebApi Maven Repository</name>
+         <id>pocillo-releases</id>
+         <name>Pocillo Maven Repository</name>
          <url>
             http://oss.sonatype.org/service/local/staging/deploy/maven2/
          </url>
       </repository>
       <snapshotRepository>
-         <id>jebapi-snapshots</id>
-         <name>JebApi Maven Snapshot Repository</name>
+         <id>pocillo-snapshots</id>
+         <name>Pocillo Maven Snapshot Repository</name>
          <url>
             http://oss.sonatype.org/content/repositories/snapshots/
          </url>
@@ -50,28 +50,6 @@
              <groupId>org.apache.felix</groupId>
              <artifactId>org.osgi.core</artifactId>
              <version>1.4.0</version>
-         </dependency>
-         <dependency>
-             <groupId>com.google.code.gson</groupId>
-             <artifactId>gson</artifactId>
-             <version>2.5</version>
-         </dependency>
-         <dependency>
-             <groupId>junit</groupId>
-             <artifactId>junit</artifactId>
-             <version>4.12</version>
-             <scope>test</scope>
-         </dependency>
-         <dependency>
-             <groupId>org.mockito</groupId>
-             <artifactId>mockito-core</artifactId>
-             <version>1.10.19</version>
-         </dependency>
-         <dependency>
-             <groupId>org.assertj</groupId>
-             <artifactId>assertj-core</artifactId>
-             <version>3.2.0</version>
-             <scope>test</scope>
          </dependency>
       </dependencies>
    </dependencyManagement>

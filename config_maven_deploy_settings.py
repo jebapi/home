@@ -13,10 +13,10 @@ deployDest = ""
 print "Branch: " + os.environ["TRAVIS_BRANCH"] + "\n"
 
 if os.environ["TRAVIS_BRANCH"] == "master":
-  deployDest = "jebapi-releases"
+  deployDest = "pocillo-releases"
   os.environ["PROJECT_VERSION"] = "-RELEASE"
 if os.environ["TRAVIS_BRANCH"] == "develop":
-  deployDest = "jebapi-snapshots"
+  deployDest = "pocillo-snapshots"
   os.environ["PROJECT_VERSION"] = "-SNAPSHOT"
 
 homedir = os.path.expanduser("~")
